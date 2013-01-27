@@ -10,7 +10,8 @@ qiwi-for-django
 
 Зависимости
 ============
-- `spyne <http://pypi.python.org/pypi/spyne>`_
+- `spyne <http://pypi.python.org/pypi/spyne/>`_
+- `SOAPpy <http://pypi.python.org/pypi/SOAPpy/>`_
 - `celery (можно и без него) <http://celeryproject.org/>`_
 
 Немного об использовании

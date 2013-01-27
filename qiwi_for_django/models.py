@@ -128,9 +128,9 @@ class QiwiPayment(models.Model):
             self.failed = datetime_now()
             self.successful = None
         if description:
-            self.status_description = smart_unicode(description)
+            self.status_description = smart_unicode(description)[:255]
         else:
             self.status_description =\
-            smart_unicode(QiwiPaymentStatus.status_msg_by_code(status))[0:255]
+            smart_unicode(QiwiPaymentStatus.status_msg_by_code(status))[:255]
         self.qiwi_status = status
         self.save()
